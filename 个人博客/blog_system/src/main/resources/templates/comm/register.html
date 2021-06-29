@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>注册</title>
+
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="shortcut icon" th:href="@{/user/img/bloglogo.jpg}"/>
+</head>
+<body style="background-color:rgb(254,233,106);">
+<form th:action="@{/register}" method="post" style="margin-left: 739px;margin-top: 309px;">
+    用户名：<input type="text" name="username"><br>
+    密码：<input type="password" name="userpassword"><br>
+    邮箱：<input type="email" name="email"><br>
+    <input type="submit" value="注册" style="margin-left: 84px;margin-top: 16px;width: 100px;">
+</form>
+</body>
+</html>
